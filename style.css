@@ -1,3 +1,44 @@
 header{
     height: 80px;
+    background-color: rgba(217, 217, 217, 0.70);
+}
+main{
+    height: calc(100vh - 160px );
+}
+footer{
+    height: 80px;
+    background-color: rgba(217, 217, 217, 0.70);
+
+}
+
+body{
+    background-image: url(img-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh; 
+    /* text-align: center; */
+    /* opacity: 0.75; */
+
+}
+
+
+h1{
+    font-size: 50px;
+    margin-top: 60px;
+    margin-bottom: 2rem;
+
+}
+
+.p-text{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.col-5{
+    background-color: rgba(217, 163, 98, 0.70);
+    background-origin: padding-box;
+    border-radius: 30px;
+    /* clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    transform: rotate(90deg); */
+    /* opacity: 0.25; */
 }
