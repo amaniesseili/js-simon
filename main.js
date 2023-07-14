@@ -11,7 +11,12 @@ function updateCountdownTime(){  // per aggiornare il countdown
     const currentTime = new Date();
     const diff = oppeningDayTime - currentTime; // la differenza 
 
-    console.log(diff);
+    // console.log(diff);
+    if (diff <=0) {
+        clearInterval(countdown);
+    }else {
+        
+    }
 
     const d = Math.floor(diff / 1000 / 60 / 60 / 24); // (diff / s /m /d) otteniamo il n. tot si s /m/h/d
     const h = Math.floor(diff / 1000 / 60 / 60) % 24 ; // (tot di ore)
