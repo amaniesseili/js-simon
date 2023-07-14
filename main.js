@@ -5,7 +5,7 @@ const seconds = document.getElementById("seconds");
 
 const currentYear = new Date().getFullYear();
 
-const oppeningDayTime = new Date(`july 14 ${currentYear} 09:30:00`);
+const oppeningDayTime = new Date(`july 21 ${currentYear} 09:30:00`);
 
 function updateCountdownTime(){  // per aggiornare il countdown
     const currentTime = new Date();
@@ -15,8 +15,6 @@ function updateCountdownTime(){  // per aggiornare il countdown
     if (diff <=0) {
         clearInterval(countdown);
     }else {
-        
-    }
 
     const d = Math.floor(diff / 1000 / 60 / 60 / 24); // (diff / s /m /d) otteniamo il n. tot si s /m/h/d
     const h = Math.floor(diff / 1000 / 60 / 60) % 24 ; // (tot di ore)
@@ -27,6 +25,9 @@ function updateCountdownTime(){  // per aggiornare il countdown
     hours.innerHTML = h ;
     minutes.innerHTML = m ;
     seconds.innerHTML = s ;
+
+}
+
 }
 
 setInterval(updateCountdownTime, 1000);
